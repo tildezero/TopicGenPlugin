@@ -3,6 +3,7 @@
     "description": "Gets a random topic from conversationstarters.com",
     "author": "ZeroMomentum (435206857276260353)",
     "version": "1.0.0",
-    "license": "MIT"
+    "license": "MIT",
+    "permissions": "ext_api" 
   }
   
