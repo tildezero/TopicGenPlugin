@@ -13,14 +13,8 @@ module.exports = class TopicGen extends Plugin {
 
   async getTopic(args) {
     const data = await get("https://www.conversationstarters.com/random.php");
-    let tosend;
-    if (args.includes("--send")) {
-      tosend = true
-    } else {
-      tosend = false
-    }
     return {
-      send: tosend,
+      send: args.includes("--send"),
       result: `${data.body.slice(39)}`
     };
   }
